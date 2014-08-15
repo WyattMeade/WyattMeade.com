@@ -82,6 +82,11 @@ p {
   line-height: 39px;
   font-weight: 400;
   margin: 0 0 40px;
+  text-align: center;
+}
+/* line 34, app/layout/_wrapper.scss */
+p.first {
+  margin-top: 40px;
 }
 
 /* line 4, styles.scss */
@@ -105,24 +110,45 @@ h1 {
 }
 
 /* line 28, styles.scss */
+h2 {
+  display: block;
+  width: 355px;
+  font-size: 40px;
+  color: #333333;
+  border: 5px solid #333333;
+  padding: 8px 0 10px 0;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+/* line 41, styles.scss */
 section {
   position: fixed;
   top: 0;
   bottom: 0;
   right: -100%;
-  width: 80%;
+  width: 75%;
   background: #fff;
+  padding: 0 100px 0;
   -webkit-transition: right 0.3s ease-out;
   -moz-transition: right 0.3s ease-out;
   -o-transition: right 0.3s ease-out;
   transition: right 0.3s ease-out;
 }
-/* line 42, styles.scss */
+/* line 56, styles.scss */
 section.flyout {
   right: 0;
 }
+/* line 62, styles.scss */
+section a {
+  text-align: center;
+  display: block;
+  color: #333333;
+  font-size: 35px;
+  text-decoration: none;
+}
 
-/* line 50, styles.scss */
+/* line 74, styles.scss */
 i {
   font-size: 40px;
   color: #fff;

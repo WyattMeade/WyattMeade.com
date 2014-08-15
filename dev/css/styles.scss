@@ -25,14 +25,28 @@ h1 {
 
 }
 
+h2 {
+
+	display: block;
+	width: 355px;
+	font-size: 40px;
+	color: $gray-01;
+	border: 5px solid $gray-01;
+	padding: 8px 0 10px 0;
+	margin: 100px auto 0;
+	text-align: center;
+
+}
+
 section {
 
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	right: -100%;
-	width: 80%;
+	width: 75%;
 	background: #fff;
+	padding: 0 100px 0;
 
 	-webkit-transition: right .3s ease-out;
 	-moz-transition: right .3s ease-out;
@@ -42,6 +56,16 @@ section {
 	&.flyout {
 
 		right: 0;
+
+	}
+
+	a {
+
+		text-align: center;
+		display: block;
+		color: $gray-01;
+		font-size: 35px;
+		text-decoration: none;
 
 	}
 
