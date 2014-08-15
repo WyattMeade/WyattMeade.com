@@ -1,0 +1,132 @@
+/* line 4, app/base/_reset.scss */
+html, body, h1, h2, h3, p, ul, ol, li, img, figure, form,
+fieldset, header, nav, section, article, aside, footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, app/base/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 19, app/base/_reset.scss */
+html {
+  -webkit-text-size-adjust: none;
+}
+
+/* line 25, app/base/_reset.scss */
+article, aside, footer, header, nav, section, figure {
+  display: block;
+  position: relative;
+}
+
+/* line 32, app/base/_reset.scss */
+img {
+  border: none;
+  display: block;
+}
+
+/* line 39, app/base/_reset.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 10, app/base/_fonts.scss */
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* line 3, app/widgets/_inline-block.scss */
+h1 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+/* line 4, app/widgets/_clear-fix.scss */
+section:before, section:after {
+  content: " ";
+  display: table;
+}
+/* line 11, app/widgets/_clear-fix.scss */
+section:after {
+  clear: both;
+}
+
+/* line 1, app/layout/_header.scss */
+header {
+  margin: 0;
+}
+
+/* line 3, app/layout/_wrapper.scss */
+body {
+  color: #333333;
+}
+
+/* line 17, app/layout/_wrapper.scss */
+section {
+  width: 100%;
+  min-height: 100%;
+}
+
+/* line 26, app/layout/_wrapper.scss */
+p {
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 400;
+  margin: 0 0 40px;
+}
+
+/* line 4, styles.scss */
+header {
+  background: url(../images/Sunset-in-New-York.jpg) no-repeat center center;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 12, styles.scss */
+h1 {
+  color: #fff;
+  border: 5px solid white;
+  position: absolute;
+  padding: 8px 10px 10px 12px;
+  left: 50%;
+  top: 50%;
+  width: 34px;
+  height: 38px;
+  margin: -16px 0 0 -17px;
+}
+
+/* line 28, styles.scss */
+section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  width: 80%;
+  background: #fff;
+  -webkit-transition: right 0.3s ease-out;
+  -moz-transition: right 0.3s ease-out;
+  -o-transition: right 0.3s ease-out;
+  transition: right 0.3s ease-out;
+}
+/* line 42, styles.scss */
+section.flyout {
+  right: 0;
+}
+
+/* line 50, styles.scss */
+i {
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
