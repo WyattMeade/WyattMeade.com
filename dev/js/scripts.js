@@ -8,7 +8,7 @@
 		$team = $(".team"),
 		$action = $(".action"),
 		$more = $(".more"),
-		$close = $(".close");
+		$close = $(".close")
 
 	var kj = {
 
@@ -57,6 +57,7 @@
 		}
 
 	}
+
 
 	kj.init();
 
