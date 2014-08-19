@@ -99,7 +99,7 @@ header {
 /* line 12, styles.scss */
 h1 {
   color: #fff;
-  border: 5px solid white;
+  border: 5px solid #fff;
   position: absolute;
   padding: 8px 10px 10px 12px;
   left: 50%;
@@ -129,18 +129,18 @@ section {
   right: -100%;
   width: 75%;
   background: #fff;
-  padding: 0 100px 0;
-  -webkit-transition: right 0.3s ease-out;
-  -moz-transition: right 0.3s ease-out;
-  -o-transition: right 0.3s ease-out;
-  transition: right 0.3s ease-out;
+  overflow: auto;
+  -webkit-transition: right .3s ease-out;
+  -moz-transition: right .3s ease-out;
+  -o-transition: right .3s ease-out;
+  transition: right .3s ease-out;
 }
 /* line 56, styles.scss */
 section.flyout {
   right: 0;
 }
 /* line 62, styles.scss */
-section a {
+section .email {
   text-align: center;
   display: block;
   color: #333333;
@@ -149,10 +149,49 @@ section a {
 }
 
 /* line 74, styles.scss */
+div {
+  display: block;
+  padding: 0 100px 0;
+}
+
+/* line 81, styles.scss */
 i {
   font-size: 40px;
   color: #fff;
   position: absolute;
   top: 20px;
   right: 20px;
+}
+/* line 89, styles.scss */
+i.fa-times {
+  color: #333333;
+  left: 20px;
+  right: auto;
+}
+
+@media (max-width: 600px) {
+  /* line 101, styles.scss */
+  section {
+    width: 100%;
+  }
+  /* line 105, styles.scss */
+  section .email {
+    font-size: 20px;
+  }
+
+  /* line 113, styles.scss */
+  h2 {
+    width: 235px;
+    font-size: 25px;
+  }
+
+  /* line 120, styles.scss */
+  div {
+    padding: 0 20px 0;
+  }
+
+  /* line 126, styles.scss */
+  p {
+    font-size: 20px;
+  }
 }

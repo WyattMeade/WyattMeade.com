@@ -46,7 +46,7 @@ section {
 	right: -100%;
 	width: 75%;
 	background: #fff;
-	padding: 0 100px 0;
+	overflow: auto;
 
 	-webkit-transition: right .3s ease-out;
 	-moz-transition: right .3s ease-out;
@@ -59,7 +59,7 @@ section {
 
 	}
 
-	a {
+	.email {
 
 		text-align: center;
 		display: block;
@@ -71,6 +71,13 @@ section {
 
 }
 
+div {
+	
+	display: block;
+	padding: 0 100px 0;
+
+}
+
 i {
 
 	font-size: 40px;
@@ -78,5 +85,48 @@ i {
 	position: absolute;
 	top: 20px;
 	right: 20px;
+
+	&.fa-times {
+
+		color: $gray-01;
+		left: 20px;
+		right: auto;
+
+	}
+
+}
+
+@media (max-width: 600px) {
+
+  section {
+
+    width: 100%;
+
+    .email {
+
+  		font-size: 20px;
+
+		}
+
+  }
+
+  h2 {
+
+  	width: 235px;
+  	font-size: 25px;
+
+  }
+
+  div {
+
+  	padding: 0 20px 0;
+
+  }
+
+  p {
+
+  	font-size: 20px;
+
+  }
 
 }
